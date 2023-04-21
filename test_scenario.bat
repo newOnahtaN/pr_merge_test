@@ -13,6 +13,5 @@ echo feature:on > config.txt && git commit -am "Feature was fixed so we are turn
 git checkout main && echo another-irrelevant-commit-change > a.txt && git commit -am "Another irrelevant change"
 git push -u origin head && git checkout topic/re-enableFeature && git push -u origin head
 
-:: Now, manually open a PR from topic/disableFeature to main. A merge which takes into account all merge
-:: bases will have the PR turn the feature back on. One that doesn't will make it look as if the change
-:: that turns the feature back on is invisible.
+:: Now, manually open a PR from topic/re-enableFeature to main. A merge which takes into account all merge
+:: bases will have the PR turn the feature back on.
